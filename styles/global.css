@@ -36,16 +36,12 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h3,
-h5 {
+.tied-together {
   --notion-font: 'SaintGeorge', serif;
   font-family: var(--notion-font);
 }
 
-h2,
-h4,
-h6 {
+.subheading {
   --notion-font: 'Sirin', sans-serif;
   font-family: var(--notion-font);
 }
