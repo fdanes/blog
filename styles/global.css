@@ -1,17 +1,18 @@
 @font-face {
-  font-family: "Cooper";
-  src: url(fonts/CooperMedium.ttf) format("truetype"),
-       url(fonts/CooperMediumItalic.ttf) format("truetype");
+  font-family: 'Cooper';
+  src:
+    url(fonts/CooperMedium.ttf) format('truetype'),
+    url(fonts/CooperMediumItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "SaintGeorge";
-  src: url(fonts/SaintGeorge.ttf) format("truetype");
+  font-family: 'SaintGeorge';
+  src: url(fonts/SaintGeorge.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Sirin";
-  src: url(fonts/Sirin.ttf) format("truetype");
+  font-family: 'Sirin';
+  src: url(fonts/Sirin.ttf) format('truetype');
 }
 
 * {
@@ -30,27 +31,27 @@ html {
 }
 
 body {
-  --notion-font:
-    'Cooper', serif;
+  --notion-font: 'Cooper', serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
 
-h1, h3, h5 {
-  --notion-font:
-    'SaintGeorge', serif;
+h1,
+h3,
+h5 {
+  --notion-font: 'SaintGeorge', serif;
   font-family: var(--notion-font);
 }
 
-h2, h4, h6 {
-  --notion-font:
-    'Sirin', sans-serif;
+h2,
+h4,
+h6 {
+  --notion-font: 'Sirin', sans-serif;
   font-family: var(--notion-font);
 }
 
 .title {
-  --notion-font:
-    'SaintGeorge', serif;
+  --notion-font: 'SaintGeorge', serif;
   font-family: var(--notion-font);
 }
 
