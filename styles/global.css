@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Cooper';
+  font-family: 'CooperMedium';
   src:
     url(fonts/CooperMedium.ttf) format('truetype'),
-    url(fonts/CooperMediumItalic.ttf) format('truetype');
+    url(fonts/CooperMediumItalic.ttf) format('truetype'),
 }
 
 @font-face {
@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+}
+
 body,
 html {
   padding: 0;
@@ -31,14 +35,17 @@ html {
 }
 
 body {
-  --notion-font: 'Cooper', serif;
-  font-family: var(--notion-font);
   overflow-x: hidden;
 }
 
-.tied-together {
-  --notion-font: 'SaintGeorge', serif;
-  font-family: var(--notion-font);
+h1, h2, h3, h4, h5, h6, button, strong, b, a {
+  --bold-font: 'CooperMedium', serif;
+  font-family: var(--bold-font);
+}
+
+.index-page > h1{
+  --tt-font: 'SaintGeorge', serif;
+  font-family: var(--tt-font);
 }
 
 .subheading {
