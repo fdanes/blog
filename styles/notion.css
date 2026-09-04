@@ -6,6 +6,124 @@
  * whereas our goal with this site is to adjust Notion's styling in a few key
  * places to add some flare.
  */
+:root {
+  --black: #1b042d;
+  --white: #fffefb;
+  --eggplant: #34144d;
+  --eggplant-transparent: #34144d4d;
+  --eggplant-light: #523f62;
+  --beige: #ffe7c2;
+  --beige-light: #fff7eb;
+  --beige-light-transparent: #fff7eb4d;
+  --beige-dark: #e8a778;
+  --beige-dark-transparent: #e8a7784d;
+  --green: #3c7f44;
+  --green-transparent: #3c7f444d;
+  --green-light: #73a580;
+  --green-dark: #104910;
+  --cranberry: #A5243E;
+  --cranberry-transparent: #A5243E4d;
+  --cranberry-light: #E76D83;
+  --cranberry-dark: #79051C;
+  --brick: #A5340A;
+  --brick-light: #E26037;
+  --brick-light-transparent: #E260374d;
+  --brick-lighter: #FFAA8F;
+  --brick-dark: #712107;
+  --brick-dark-transparent: #7121074d;
+  --teal: #377998;
+  --teal-transparent: #3779984d;
+  --teal-light: #A9E0F9;
+  --teal-dark: #1D5C7A;
+  --gray: #948392;
+  --gray-transparent: #9483924d;
+  --gray-light: #c9c1c9;
+  --lavender: #8050a5;
+  --lavender-transparent: #8050a54d;
+  --lavender-light: #c0a7d2;
+  --plum: #7b004c;
+  --plum-transparent: #7b004c4d;
+  --plum-light: #d49bbb;
+  --bg-color: var(--beige-light);
+  --bg-color-1: var(--beige-light-transparent);
+  --bg-color-0: var(--beige);
+  --fg-color: var(--eggplant);
+  --fg-color-0: var(--eggplant-light);
+  --fg-color-1: var(--eggplant-transparent);
+  --select-color-0: var(--brick-dark);
+  --select-color-1: var(--brick-dark-transparent);
+  --select-color-2: var(--beige-dark);
+  --notion-red: var(--cranberry);
+  --notion-pink: var(--plum);
+  --notion-blue: var(--teal);
+  --notion-purple: var(--lavender);
+  --notion-teal: var(--green);
+  --notion-yellow: var(--beige-dark);
+  --notion-orange: var(--brick-light);
+  --notion-brown: var(--brick-dark);
+  --notion-gray: var(--gray);
+  --notion-red_background: var(--cranberry-light);
+  --notion-pink_background: var(--plum-light);
+  --notion-blue_background: var(--teal-light);
+  --notion-purple_background: var(--lavender-light);
+  --notion-teal_background: var(--green-light);
+  --notion-yellow_background: var(--beige-light);
+  --notion-orange_background: var(--brick-lighter);
+  --notion-brown_background: var(--brick);
+  --notion-gray_background: var(--gray-light);
+  --notion-default_background: var(--gray-transparent);
+  --notion-red_background_co: var(--cranberry-transparent);
+  --notion-pink_background_co: var(--plum-transparent);
+  --notion-blue_background_co: var(--teal-transparent);
+  --notion-purple_background_co: var(--lavender-transparent);
+  --notion-teal_background_co: var(--green-transparent);
+  --notion-yellow_background_co: var(--beige-dark-transparent);
+  --notion-orange_background_co: var(--brick-light-transparent);
+  --notion-brown_background_co: var(--brick-dark-transparent);
+  --notion-gray_background_co: var(--gray-transparent);
+  --notion-item-blue: var(--teal);
+  --notion-item-orange: var(--brick);
+  --notion-item-green: var(--green);
+  --notion-item-pink: var(--plum);
+  --notion-item-brown: var(--brick-dark);
+  --notion-item-red: var(--cranberry);
+  --notion-item-yellow: var(--beige-dark);
+  --notion-item-default: var(--gray);
+  --notion-item-purple: var(--lavender);
+  --notion-item-gray: var(--gray);
+  --notion-item-text-blue: var(--white);
+  --notion-item-text-orange: var(--white);
+  --notion-item-text-green: var(--white);
+  --notion-item-text-pink: var(--white);
+  --notion-item-text-brown: var(--white);
+  --notion-item-text-red: var(--white);
+  --notion-item-text-yellow: var(--white);
+  --notion-item-text-default: var(--white);
+  --notion-item-text-purple: var(--white);
+  --notion-item-text-gray: var(--white);
+  --notion-item-bullet-blue: var(--teal);
+  --notion-item-bullet-orange: var(--brick);
+  --notion-item-bullet-green: var(--green);
+  --notion-item-bullet-pink: var(--plum);
+  --notion-item-bullet-brown: var(--brick-dark);
+  --notion-item-bullet-red: var(--cranberry);
+  --notion-item-bullet-yellow: var(--beige-dark);
+  --notion-item-bullet-default: var(--gray);
+  --notion-item-bullet-purple: var(--lavender);
+  --notion-item-bullet-gray: var(--gray);
+}
+
+.dark-mode {
+  --bg-color: var(--black);
+  --bg-color-0: var(--eggplant-light);
+  --bg-color-1: var(--eggplant-transparent);
+  --fg-color: var(--beige-light);
+  --fg-color-0: var(--beige);
+  --fg-color-1: var(--beige-light-transparent);
+  --select-color-0: var(--beige-dark);
+  --select-color-1: var(--beige-dark-transparent);
+  --select-color-2: var(--eggplant-light);
+}
 
 .notion {
   --notion-max-width: 720px;
@@ -29,6 +147,10 @@
   padding: 0.5em 2px;
 }
 
+.notion-property-multi_select-item {
+  font-family: 'CooperMedium', serif;
+}
+
 .notion-asset-caption {
   text-align: center;
 }
@@ -38,9 +160,26 @@
   margin-bottom: 1em;
 }
 
+.notion-asset-wrapper img {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 16px;
+  align-self: center;
+}
+
 .notion-asset-wrapper-video > div,
 .notion-asset-wrapper-video video {
   width: 100% !important;
+}
+
+.notion-button:hover {
+  background-color: var(--gray);
+  opacity: 0.6;
+}
+
+.notion-button {
+  color: var(--white);
+  background-color: var(--gray);
 }
 
 .notion-header .notion-nav-header {
@@ -198,9 +337,9 @@
   border-radius: 24px;
 }
 
-.notion-page-cover-wrapper {
+/* .notion-page-cover-wrapper {
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
-}
+} */
 
 @media only screen and (max-width: 1200px) {
   .notion-page-cover-wrapper,
@@ -246,93 +385,8 @@
   transition-duration: 300ms;
 }
 
-.notion-red_background,
-.notion-pink_background,
-.notion-blue_background,
-.notion-purple_background,
-.notion-teal_background,
-.notion-yellow_background,
-.notion-orange_background,
-.notion-brown_background,
-.notion-gray_background {
-  padding: 0 0.5rem;
-  margin: 0 -0.5rem 0 -0.25rem;
-  border-radius: 0.5rem;
-  border-bottom-left-radius: 0.125rem;
-  box-decoration-break: clone;
-
-  background-color: none;
-
-  /* light yellow */
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #fff697 10.5%,
-    #fdf59d 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-purple_background,
-.notion-pink_background {
-  /* light pink */
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #f5b8d1 10.5%,
-    #f9bcd3 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-blue_background,
-.notion-gray_background {
-  /* light blue */
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #adedfc 10.5%,
-    #adebfd 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-red_background,
-.notion-orange_background {
-  /* light red */
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #f5c4ff 10.5%,
-    #e7a8fc 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-teal_background {
-  /* light green */
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #d4eabc 10.5%,
-    #d2eabc 85.29%,
-    var(--bg-color)
-  );
-}
-
-.notion-brown_background {
-  /* dark blue */
-  background-image: linear-gradient(
-    119deg,
-    var(--bg-color),
-    #96b8ec 10.5%,
-    #a6c3f0 85.29%,
-    var(--bg-color)
-  );
-}
-
 /* disable highlighting in dark mode */
-.dark-mode .notion-red_background,
+/* .dark-mode .notion-red_background,
 .dark-mode .notion-pink_background,
 .dark-mode .notion-blue_background,
 .dark-mode .notion-purple_background,
@@ -345,7 +399,7 @@
   margin: 0;
   border-radius: 0;
   background: none !important;
-}
+} */
 
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
