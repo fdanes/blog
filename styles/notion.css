@@ -35,6 +35,7 @@
   --teal-transparent: #3779984d;
   --teal-light: #A9E0F9;
   --teal-dark: #1D5C7A;
+  --teal-dark-transparent: #1D5C7A4d;
   --gray: #948392;
   --gray-transparent: #9483924d;
   --gray-light: #c9c1c9;
@@ -123,6 +124,7 @@
   --select-color-0: var(--beige-dark);
   --select-color-1: var(--beige-dark-transparent);
   --select-color-2: var(--eggplant-light);
+  --notion-blue_background_co: var(--teal-transparent);
 }
 
 .notion {

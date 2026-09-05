@@ -38,7 +38,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, button, strong, b, a {
+h1, h2, h3, h4, h5, h6, button, a {
   --bold-font: 'CooperMedium', serif;
   font-family: var(--bold-font);
 }
