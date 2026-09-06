@@ -13,6 +13,7 @@ import '@/styles/prism-theme.css'
 
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
+import { Analytics } from '@vercel/analytics/next'
 
 import * as config from '@/lib/config'
 
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang='en' suppressHydrationWarning>
       <body>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   )
